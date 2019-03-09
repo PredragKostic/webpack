@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack src/js/app.js --output dist/bundle.js",
+    "build": "webpack-dev-server --entry ./src/js/app.js --output-filename ./dist/bundle.js",
     "prod": "webpack src/js/app.js dist/bundle.js -p"
   },
   "repository": {
@@ -20,6 +20,7 @@
   "homepage": "https://github.com/PredragKostic/webpack#readme",
   "devDependencies": {
     "webpack": "^4.29.6",
-    "webpack-cli": "^3.2.3"
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.2.1"
   }
 }
